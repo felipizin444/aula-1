@@ -1,0 +1,4 @@
+java -version
+java version "21.0.1"  (ou similar)
+public
+ class MeuNome { public static void main(String[] args) { System.out.println(guilherme eduardo); } }
