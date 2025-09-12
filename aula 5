@@ -1,0 +1,30 @@
+public class Exercicios2 {
+    public static void main(String[] args) {
+
+        // ======================
+        // Questão 01 - Verificação de Desconto
+        // ======================
+        boolean produtoComDesconto = true;   // valor de exemplo
+        boolean cupomValido = false;         // valor de exemplo
+
+        boolean descontoAplicado = produtoComDesconto || cupomValido;
+
+        System.out.println("=== Questão 01 ===");
+        System.out.println("Produto com desconto: " + produtoComDesconto);
+        System.out.println("Cupom válido: " + cupomValido);
+        System.out.println("Desconto aplicado: " + descontoAplicado);
+
+        // ======================
+        // Questão 02 - Autorização de Compra
+        // ======================
+        boolean saldoSuficiente = true;    // valor de exemplo
+        boolean contaVerificada = true;    // valor de exemplo
+
+        boolean compraAutorizada = saldoSuficiente && contaVerificada;
+
+        System.out.println("\n=== Questão 02 ===");
+        System.out.println("Saldo suficiente: " + saldoSuficiente);
+        System.out.println("Conta verificada: " + contaVerificada);
+        System.out.println("Compra autorizada: " + compraAutorizada);
+    }
+}
