@@ -1,0 +1,33 @@
+public class Exercicios {
+
+    public static void main(String[] args) {
+
+        // ======================
+        // Questão 01 - Retângulo
+        // ======================
+        double base = 5.5;     // valor de exemplo
+        double altura = 3.2;   // valor de exemplo
+
+        double area = base * altura;
+        double perimetro = 2 * (base + altura);
+
+        System.out.println("=== Questão 01 ===");
+        System.out.println("Base: " + base);
+        System.out.println("Altura: " + altura);
+        System.out.println("Área do retângulo: " + area);
+        System.out.println("Perímetro do retângulo: " + perimetro);
+
+        // ======================
+        // Questão 02 - Idades
+        // ======================
+        int idade1 = 25;   // valor de exemplo
+        int idade2 = 30;   // valor de exemplo
+
+        boolean primeiraMaisVelha = idade1 > idade2;
+
+        System.out.println("\n=== Questão 02 ===");
+        System.out.println("Idade da primeira pessoa: " + idade1);
+        System.out.println("Idade da segunda pessoa: " + idade2);
+        System.out.println("A primeira pessoa é mais velha: " + primeiraMaisVelha);
+    }
+}
