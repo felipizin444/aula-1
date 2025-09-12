@@ -1,0 +1,26 @@
+public class WrappersDemo {
+    public static void main(String[] args) {
+
+        // Usando Integer.parseInt
+        String numeroTexto = "25";
+        int numero = Integer.parseInt(numeroTexto);
+        System.out.println("Número convertido (String -> int): " + numero);
+
+        // Usando Character.isDigit
+        char c = '8';
+        boolean ehDigito = Character.isDigit(c);
+        System.out.println("O caractere '" + c + "' é um dígito? " + ehDigito);
+
+        // Usando String.toUpperCase
+        String nome = "java wrappers";
+        String nomeMaiusculo = nome.toUpperCase();
+        System.out.println("Texto em maiúsculas: " + nomeMaiusculo);
+
+        // Só para ilustrar mais dois métodos:
+        boolean bool = Boolean.parseBoolean("true");
+        System.out.println("String convertida para boolean: " + bool);
+
+        boolean ehNan = Double.isNaN(0.0 / 0.0);
+        System.out.println("O valor é NaN? " + ehNan);
+    }
+}
