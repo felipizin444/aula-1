@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Exercicios4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // ======================
+        // Questão 01 - Conversão de Temperatura
+        // ======================
+        System.out.println("=== Questão 01: Conversão de Temperatura ===");
+        System.out.print("Digite a temperatura em graus Celsius: ");
+        double celsius = sc.nextDouble();
+
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        System.out.println("Temperatura em Fahrenheit: " + fahrenheit);
+
+        // ======================
+        // Questão 02 - Cálculo de salário com adicional
+        // ======================
+        System.out.println("\n=== Questão 02: Cálculo de Salário com Adicional ===");
+        System.out.print("Digite o salário-base: ");
+        double salarioBase = sc.nextDouble();
+
+        System.out.print("Digite o percentual de aumento (%): ");
+        double percentual = sc.nextDouble();
+
+        double salarioFinal = salarioBase + (salarioBase * (percentual / 100));
+        System.out.println("Salário final com reajuste: " + salarioFinal);
+
+        sc.close();
+    }
+}
