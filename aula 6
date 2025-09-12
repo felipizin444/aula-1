@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Exercicios3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // ======================
+        // Questão 01 - Cálculo de Nota Final
+        // ======================
+        final double MEDIA_APROVACAO = 7.0;
+
+        System.out.println("=== Questão 01 ===");
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = sc.nextDouble();
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = sc.nextDouble();
+
+        double media = (nota1 + nota2) / 2.0;
+        boolean aprovado = media >= MEDIA_APROVACAO;
+
+        System.out.println("Média final: " + media);
+        System.out.println("Aprovado: " + aprovado);
+
+        // ======================
+        // Questão 02 - Verificação de Compra
+        // ======================
+        final double TAXA_DESCONTO = 0.10;
+
+        System.out.println("\n=== Questão 02 ===");
+        System.out.print("Digite o preço do produto: ");
+        double precoProduto = sc.nextDouble();
+        System.out.print("Digite o valor disponível do cliente: ");
+        double valorDisponivel = sc.nextDouble();
+
+        double precoFinal = precoProduto - (precoProduto * TAXA_DESCONTO);
+        boolean compraPermitida = valorDisponivel >= precoFinal;
+
+        System.out.println("Preço final com desconto: " + precoFinal);
+        System.out.println("Compra permitida: " + compraPermitida);
+
+        // ======================
+        // Questão 03 - Triagem para Doação de Sangue
+        // ======================
+        final double PESO_MINIMO = 50.0;
+
+        System.out.println("\n=== Questão 03 ===");
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = sc.nextInt();
+        System.out.print("Digite o peso da pessoa (kg): ");
+        double peso = sc.nextDouble();
+
+        boolean aptoParaDoar = (idade >= 18) && (peso >= PESO_MINIMO);
+
+        System.out.println("Apto para doar: " + aptoParaDoar);
+
+        sc.close();
+    }
+}
